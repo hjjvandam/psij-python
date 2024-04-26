@@ -18,7 +18,7 @@ if __name__ == '__main__':
         author='The ExaWorks Team',
         author_email='hategan@mcs.anl.gov',
 
-        url='https://github.com/exaworks/psij-python',
+        url='https://github.com/hjjvandam/psij-python',
 
         classifiers=[
             'Programming Language :: Python :: 3',

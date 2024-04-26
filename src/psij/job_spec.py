@@ -5,8 +5,6 @@ from __future__ import annotations
 import pathlib
 from typing import Dict, List, Optional, Union
 
-from typeguard import check_argument_types
-
 import psij.resource_spec
 import psij.job_attributes
 
@@ -129,8 +127,6 @@ class JobSpec(object):
             the scheduler. In such a case, one must leave the `spec.directory` attribute empty and
             refer to files inside the job directory using relative paths.
         """
-        assert check_argument_types()
-
         self._name = name
         self.executable = executable
         self.arguments = arguments

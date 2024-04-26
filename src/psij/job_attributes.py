@@ -3,8 +3,6 @@ import re
 from datetime import timedelta
 from typing import Optional, Dict
 
-from typeguard import check_argument_types
-
 
 logger = logging.getLogger(__name__)
 
@@ -49,8 +47,6 @@ class JobAttributes(object):
 
         All constructor parameters are accessible as properties.
         """
-        assert check_argument_types()
-
         self.account = account
         self.duration = duration
         self.queue_name = queue_name

@@ -1,8 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Optional, List
 
-from typeguard import check_argument_types
-
 from psij.exceptions import InvalidJobException
 
 
@@ -81,8 +79,6 @@ class ResourceSpecV1(ResourceSpec):
 
         All constructor parameters are accessible as properties.
         """
-        assert check_argument_types()
-
         self.node_count = node_count
         self.process_count = process_count
         self.processes_per_node = processes_per_node
